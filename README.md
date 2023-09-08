@@ -6,7 +6,7 @@ This repo contains a random quote generator web app that displays a randoms and 
 
 ### Links
 
-- Live Site URL: [Live site URL here](https:xoxo/)
+- Live Site URL: [Live site URL here](https://deluxe-fudge-de4eb3.netlify.app/)
 
 ### Built with
 
