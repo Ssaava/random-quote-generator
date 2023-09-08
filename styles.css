@@ -1,70 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(hsla(240, 100%, 50%, 0.4), hsla(300, 100%, 50%, 0.4), #fff);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    font-family: sans-serif;
-    color: #fff;
-    position: relative;
+body {
+  background: linear-gradient(
+    hsla(240, 100%, 50%, 0.4),
+    hsla(300, 100%, 50%, 0.4),
+    #fff
+  );
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: #fff;
+  position: relative;
 }
 
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1.3rem;
-    margin: auto;
-    max-width: 40rem;
-    text-align: center;
-    background: url('images/background.jpg');
-    background-repeat: no-repeat;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.3rem;
+  margin: auto;
+  /* max-width: 40rem; */
+  /* made max-width: 30rem; to make the size resonable after adding a width of 98% */
+  max-width: 30rem;
+  /* added a width of 98% such that the conatiner does not shrink on screen size getting reduced */
+  width: 98%;
+  text-align: center;
+  background: url("images/background.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-h2{
-    font-size: 1.3rem;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    margin-bottom: 3rem;
-    animation: slideDown 1.2s ease forwards;
+h2 {
+  /* font-size: 1.3rem; */
+  /* using clamp property for dynamic font-sizes */
+  font-size: clamp(1.2rem, 6vw, 1.6rem);
+  font-family: "Mochiy Pop P One", sans-serif;
+  /* margin-bottom: 3rem; */
+  /* using calc() function to set dynamic margins */
+  margin-bottom: calc(12% - 5px);
+  animation: slideDown 1.2s ease forwards;
 }
 
-p{
-    margin-bottom: 2.5rem;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
+p {
+  /* margin-bottom: 2.5rem; */
+  /* using calc() function to set dynamic margins */
+  margin-bottom: calc(12% - 5px);
+  /* font-size: 1.2rem; */
+  /* usign clamp for dynamic font-sizes */
+  font-size: clamp(0.9rem, 5vw, 1.2rem);
+  font-family: "Poppins", sans-serif;
 }
 
-button{
-    border: none;
-    width: 200px;
-    padding: 10px;
-    margin-bottom: 1rem;
-    background-color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border-radius: 10px;
-    cursor: pointer;
-    animation: slideUp .8s ease-out forwards;
+button {
+  border: none;
+  /* width: 200px; */
+  /* using min() function to set dynamic widths */
+  width: min(200px, 80%);
+  padding: 10px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  /* font-size: 1.3rem; */
+  /* usign clamp for dynamic font-sizes */
+  font-size: clamp(0.9rem, 7vw, 1.3rem);
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: slideUp 0.8s ease-out forwards;
 }
 
-@keyframes slideUp{
-    0%{transform: translateY(100%);}
-    100%{transform: translateY(0);}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes slideDown{
-    0%{transform: translateY(-100%);}
-    100%{transform: translateY(0);}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
