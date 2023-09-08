@@ -32,7 +32,7 @@ function generate() {
             output = "Hard work beats talent when talent doesn’t work hard.\n ~Tim Notke";
             break;
         case 9:
-            output = "Tomorrow doesn't come for those who don't work for it today.\n ~ayinbota";
+            output = "Tomorrow doesn't come for those who don't work for it today.";
             break;
         case 10:
             output = 'Why blend in when you can stand out? \n~ayinbota';
