@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(hsla(240, 100%, 50%, 0.4), hsla(300, 100%, 50%, 0.4), #fff);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.3rem;
+    margin: auto;
+    max-width: 30rem;
+    text-align: center;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin-bottom: 3rem;
+    animation: slideDown 1.2s ease forwards;
+}
+
+p{
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    border: none;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: slideUp .8s ease-out forwards;
+}
+
+@keyframes slideUp{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes slideDown{
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(0);}
+}
