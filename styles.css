@@ -25,6 +25,7 @@ body{
     padding: 1.3rem;
     margin: auto;
     max-width: 40rem;
+    width: 30rem;
     text-align: center;
     background: url('images/background.jpg');
     background-repeat: no-repeat;
